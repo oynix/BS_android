@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEDF1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- 注册页面的额文本"新用户注册" -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="160dip"
+            android:gravity="center"
+            android:text="@string/register_title_text"
+            android:textSize="12pt"
+            android:typeface="monospace" />
+
+        <!-- 账号和密码和输入框 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/register_account"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginStart="15dip"
+                android:layout_marginLeft="15dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/account_text"
+                android:inputType="text"
+                android:labelFor="@+id/account"
+                android:maxLength="32"
+                android:textColorHint="#CFD0D1"
+                android:textSize="6pt"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginStart="15dip"
+                android:layout_marginLeft="15dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/password_text"
+                android:inputType="textPassword"
+                android:labelFor="@+id/password"
+                android:maxLength="32"
+                android:textColorHint="#CFD0D1"
+                android:textSize="6pt"
+                android:typeface="monospace" />
+            
+            <EditText
+                android:id="@+id/register_password_check"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginStart="15dip"
+                android:layout_marginLeft="15dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/password_text_check"
+                android:inputType="textPassword"
+                android:labelFor="@+id/password"
+                android:maxLength="32"
+                android:textColorHint="#CFD0D1"
+                android:textSize="6pt"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/login_btn_bg"
+            android:text="@string/register_btn_text"
+            android:textColor="#FFFFFF"
+            android:textSize="6pt"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+</LinearLayout>

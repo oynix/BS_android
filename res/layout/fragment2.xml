@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/frag2_face"
+            android:layout_width="fill_parent"
+            android:layout_height="180dip"
+            android:background="@drawable/timg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/header2" />
+
+            <TextView
+                android:id="@+id/frag2_username_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="@string/frag2_hint_username_text"
+                android:textSize="8pt"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/frag2_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            android:background="#FAFCF1" >
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logoff"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/btn_logoff_bg"
+        android:text="@string/btn_logoff_text"
+        android:textColor="#FFFFFF"
+        android:textSize="6.5pt"
+        android:typeface="monospace" />
+
+</LinearLayout>

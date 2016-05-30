@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mybs</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="account_text">请输入账号</string>
+    <string name="password_text">请输入密码</string>
+    <string name="password_text_check">请再次输入密码</string>
+    <string name="login_btn_text">登    录</string>
+    <string name="new_user_text">新用户</string>
+    <string name="exit">再次点击返回按钮退出应用</string>
+    <string name="btn_logoff_text">退出登录</string>
+    <string name="frag2_hint_username_text">Username</string>
+    <string name="login_failed">用户名或密码错误</string>
+    <string name="input_complete">请输入完整</string>
+    <string name="upload_text">上传</string>
+    <string name="title_left_text">主页</string>
+    <string name="title_right_text">关于我</string>
+    <string name="popup_title">请选择上传类型</string>
+    <string name="local_upload_text">本地视频</string>
+    <string name="camera_upload_text">拍摄视频</string>
+    <string name="image_upload_text">本地图片</string>
+    <string name="list_left_label">缩略图</string>
+    <string name="list_right_label">详细信息</string>
+    <string name="no_select_video">未选择文件</string>
+    <string name="no_capture_video">未拍摄视频</string>
+    <string name="alert_dialog_btn_text">确定</string>
+    <string name="resulttip">提示</string>
+    <string name="register_title_text">新用户注册</string>
+    <string name="register_btn_text">注册</string>
+    <string name="change_password_title_text">修改密码</string>
+    <string name="old_password_text">请输入旧密码</string>
+    <string name="new_password_text">请输入新密码</string>
+    <string name="confirm_new_password_text">请确认新密码</string>
+    <string name="dwonload_history_text">已经下载的文件</string>
+
+</resources>

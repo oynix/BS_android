@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F7"
+    android:orientation="vertical" >
+
+    <!-- 缩略图 详细信息 >>>>>标签项 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/list_left_label"
+            android:textSize="6pt"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/list_right_label"
+            android:textSize="6pt"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/frag1_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1" />
+
+    <!-- 最底侧的上传按钮 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginEnd="20dip"
+        android:layout_marginStart="20dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_upload"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/btn_upload_bg"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/upload_bg"
+            android:text="@string/upload_text" />
+    </LinearLayout>
+
+</LinearLayout>

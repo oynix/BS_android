@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dip"
+    android:background="@drawable/popupwindow_bg"
+    android:orientation="vertical" >
+
+    <!-- "请选择上传类型" 文本 -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:text="@string/popup_title"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        android:typeface="monospace" />
+
+    <!-- 第一行的三个ImageButton的图标 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <ImageButton
+            android:id="@+id/btn_tupian_upload"
+            android:layout_width="0dip"
+            android:layout_height="70dip"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/tupian_upload_btn_bg"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/btn_bendi_upload"
+            android:layout_width="0dip"
+            android:layout_height="70dip"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/bendi_upload_btn_bg"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/btn_paishe_upload"
+            android:layout_width="0dip"
+            android:layout_height="70dip"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/paishe_upload_btn_bg"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <!-- 第二行的三个文本说明 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="20dip"
+            android:layout_marginEnd="10dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/image_upload_text"
+            android:textColor="#FFFFFF"
+            android:textSize="6pt" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="20dip"
+            android:layout_marginEnd="20dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/local_upload_text"
+            android:textColor="#FFFFFF"
+            android:textSize="6pt" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="20dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/camera_upload_text"
+            android:textColor="#FFFFFF"
+            android:textSize="6pt" />
+    </LinearLayout>
+
+</LinearLayout>

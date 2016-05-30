@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEDF1"
+    android:orientation="vertical" >
+
+    <!-- 注册页面的额文本"已经下载的文件" -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/title_bg"
+        android:gravity="center"
+        android:text="@string/dwonload_history_text"
+        android:textSize="6pt"
+        android:typeface="monospace" />
+    <!-- 缩略图 详细信息 >>>>>标签项 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/list_left_label"
+            android:textSize="6pt"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/list_right_label"
+            android:textSize="6pt"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dh_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1" />
+
+</LinearLayout>
